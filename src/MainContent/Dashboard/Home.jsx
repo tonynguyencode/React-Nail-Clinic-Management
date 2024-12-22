@@ -1,21 +1,20 @@
 import React from 'react';
 import './homeStyle.css';
-import frontPage from '/Users/thuon/Desktop/Nail Image Project/Frontend project/my-react-app/src/assets/body-image.jpg';
-
-
+import FooterBody from './FooterBody/Footer';
+import 'flowbite';
 
 const HomeBody = () => {
 
 return (
 <div>
 
-
+  
     <div className="content">
         <div className="body-container">
 
             <div className="image-container">
                 <img
-                    src={frontPage}
+                    src="/body-image.jpg"
                     alt="front page image for the Home"
                     
                 className="body-image"  />
@@ -29,6 +28,7 @@ return (
         </div>
     </div>
         
+<<<<<<< HEAD
     <div className="footerBody">
         
 
@@ -55,6 +55,12 @@ return (
   
     </div>
 
+=======
+   <div className="footer-body">
+        <FooterBody />
+   </div>
+  
+>>>>>>> b16b9632bd96d257fea465b0fcf888974ab7dc1b
 
 </div>
     );
