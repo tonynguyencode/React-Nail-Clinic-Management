@@ -6,7 +6,7 @@ import {Routes, Route, Router} from 'react-router-dom';
 
 const MyIcon = () => {
     return (
-        <svg  width="43px" height="27px"  stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"
+        <svg  width="43px" height="27px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"
 
         
         >
