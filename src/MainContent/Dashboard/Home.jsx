@@ -30,6 +30,8 @@ return (
     </div>
         
     <div className="footerBody">
+        
+
         <div className="headerText">
             <h2>There's Nothing a Fresh Manicure Cannot Fix.</h2>
         </div>
@@ -50,7 +52,7 @@ return (
 
             </div>
         </div>
-
+  
     </div>
 
 

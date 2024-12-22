@@ -3,13 +3,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    gap: 20px;
+   
     background-color:ivory;
 }
 
 .image-container {
     flex: 2; /* Makes the image container take up 2 part of the available space */
-    max-width: 600px;
+    max-width: 700px;
     width: 100% ;  
 }
 
@@ -105,8 +105,8 @@
   padding: 70px;
   height: 100%;
   max-height: 600px;
-  margin-top: 50px;
-  background-image: url("C:\Users\thuon\Desktop\Nail Image Project\Frontend project\my-react-app\src\assets\footer.jpg");
+  margin-top: 0px;
+ 
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -183,3 +183,17 @@
   transform: translateY(2px);
 }
 
+.gradient--0 {
+  --gradient-start: #6DE195;
+  --gradient-start-text: '#6DE195';
+  --gradient-end: #C4E759;
+  --gradient-end-text: '#C4E759';
+}
+
+.footer-text {
+  display: flex;
+}
+
+.footer-text p {
+
+}
