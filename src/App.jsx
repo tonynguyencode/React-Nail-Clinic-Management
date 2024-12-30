@@ -4,10 +4,17 @@ import './App.css';
 
 import HomeBody from './MainContent/Dashboard/Home';
 import LoginPage from './MainContent/LoginForm/Login';
-import Icon from '../src/assets/MyIcon';
+import Icon from './assets/MyIcon';
+import SignUpPage from './MainContent/SignUpForm/signup';
+
+import AppointmentPage from './MainContent/AppointmentPage/admin';
+
+import FullPage from './MainContent/AppointmentPage/customer';
+import Appointment from './MainContent/AppointmentPage/appointmentPage';
+
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
+import { StyledEngineProvider } from '@mui/material/styles';
 
 
 
@@ -38,6 +45,7 @@ const App = () =>  {
               </Link>
             </nav>
         </div>
+        
       </header>
 
       <main className="content">
@@ -50,6 +58,11 @@ const App = () =>  {
 
           <Route path="/login" element={<LoginPage />} />
 
+          <Route path="/signup" element={<SignUpPage />} />
+
+          <Route path="/appointment" element={<Appointment />} />
+
+          <Route path="/model" element={<FullPage />} />
 
         </Routes>
 

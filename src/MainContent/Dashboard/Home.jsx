@@ -1,17 +1,25 @@
 import React from 'react';
 import './homeStyle.css';
 import FooterBody from './FooterBody/Footer';
-import 'flowbite';
+
+import { StyledEngineProvider } from '@mui/material/styles';
+
+import ImageCard1 from './Card/flowerNail';
+import ImageCard2 from './Card/Linda';
+import ImageCard3 from './Card/john-Nail';
+
+import appointRequest from '../AppointmentPage/customer';
 
 const HomeBody = () => {
 
 return (
-<div>
+<div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
 
   
-    <div className="content">
-        <div className="body-container">
+    
+    <main style={{ flex: 1 }}>
 
+        <div className="body-container">
             <div className="image-container">
                 <img
                     src="/body-image.jpg"
@@ -20,47 +28,59 @@ return (
                 className="body-image"  />
             </div>
 
+            <div className="image-container">
+                <img
+                    src="/nailBodyimage.jpg"
+                    alt="front page image for the Home"
+                    
+                className="body-image body-changed"  />
+            </div>
+
+
             <div className="text-container">
                 <h2>Nails Done Right.</h2>
                 <p>Every detail considered, reimagined + improved.</p>
                 <button className='button-60'>Learn More</button>
             </div>
+
+
         </div>
-    </div>
+
+        <div className="image-card">
+            <div className='card'>
+            <StyledEngineProvider injectFirst>
+                <ImageCard1 />
+            </StyledEngineProvider>
+            </div>
+            <div className='card'>
+            <StyledEngineProvider injectFirst>
+                <ImageCard2 />
+            </StyledEngineProvider>
+            </div>
+            <div className='card'>
+            <StyledEngineProvider injectFirst>
+                <ImageCard3 />
+            </StyledEngineProvider>
+            </div>
+
+        </div>
+    </main>
+
+        <footer>
+            <div> 
+                <FooterBody />
+            </div>
+        </footer>
         
-<<<<<<< HEAD
-    <div className="footerBody">
+        
+        
+       
+
+    
         
 
-        <div className="headerText">
-            <h2>There's Nothing a Fresh Manicure Cannot Fix.</h2>
-        </div>
-
-        <div className="bodyButtons">
-            <button className='button-30'>Book Appointment</button>
-            <button className='button-30'>View Service Menu</button>
-        </div>
-
-        <div className="3-simpleText">
-            <div className="contact">
-                    
-            </div>
-            <div className="hours">
-
-            </div>
-            <div className="location">
-
-            </div>
-        </div>
+   
   
-    </div>
-
-=======
-   <div className="footer-body">
-        <FooterBody />
-   </div>
-  
->>>>>>> b16b9632bd96d257fea465b0fcf888974ab7dc1b
 
 </div>
     );

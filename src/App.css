@@ -1,5 +1,4 @@
 
-
 .App {
   text-align: center;
   display: flex;
@@ -7,6 +6,7 @@
   min-height: 100vh;
   height: auto;
   overflow: auto;
+
 }
 
 
@@ -22,7 +22,7 @@
 }
 
 .App-header {
-  background-color:black;
+  background-color:teal;
   display: flex;
   align-items: stretch;
   text-align:left;
@@ -35,23 +35,21 @@
 }
 
 .store-name {
-  
   margin-bottom: 10px;
-  
   flex-grow: 2;
 }
 
 /* Navigation bar css*/
 .navbar {
   display: flex;
-  gap: 15px;
+  gap: 45px;
   flex-grow: 8;
   justify-content: space-evenly;
   justify-items: center;
   position: sticky;
   padding-right: 25px;
 
-  
+  margin-right: 20px;
   letter-spacing: 3px;
   text-decoration: none;
   font-size: var(--fs-size);
@@ -62,12 +60,13 @@
 
 .navbar p {
   color: aliceblue;
+  font-size: 20px;
 }
 
 .nav-link {
   
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   padding-right: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -77,6 +76,7 @@
 /* Need to delete this*/
 .content {
   flex:1; /*Allows the content to grow and push footer to the bottom */
+  background-color:ghostwhite;
 }
 
 
@@ -184,7 +184,7 @@
   --fs-size: 2em;
   letter-spacing: 3px;
   text-decoration: none;
-  font-size: var(--fs-size);
+  font-size: 50px;
   font-family: "Arial";
   position: relative;
   text-transform: uppercase;
